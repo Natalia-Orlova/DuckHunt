@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes rotate-out-top {
+  0% {
+    top: 9vh;
+  }
+  100% {
+    left: 50vw;
+    top: 100vh;
+  }
+}
+@keyframes duck-fly-1 {
+  0% {
+    top: 12vh;
+  }
+  50% {
+    left: 6vw;
+    top: 23vh;
+  }
+  100% {
+    left: 100vw;
+    top: 67vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    top: 67vh;
+  }
+  50% {
+    left: 59vw;
+    top: 11vh;
+  }
+  100% {
+    left: 100vw;
+    top: 69vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    top: 74vh;
+  }
+  50% {
+    left: 20vw;
+    top: 59vh;
+  }
+  100% {
+    left: 100vw;
+    top: 12vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    top: 82vh;
+  }
+  50% {
+    left: 16vw;
+    top: 22vh;
+  }
+  100% {
+    left: 100vw;
+    top: 1vh;
+  }
+}
+html {
+  cursor: url(img/aim2.svg), pointer;
+}
+
+body {
+  counter-reset: count;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.duck {
+  position: absolute;
+  left: -150px;
+}
+.duck__img {
+  width: 150px;
+}
+.duck__img:hover {
+  cursor: url(img/aim2.svg), pointer;
+}
+.duck-check {
+  position: absolute;
+  left: -99999px;
+  visibility: hidden;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+.duck1 {
+  animation: duck-fly-1 10s ease-in 1s both;
+}
+.duck2 {
+  animation: duck-fly-2 10s ease-in 2s both;
+}
+.duck3 {
+  animation: duck-fly-3 10s ease-in 3s both;
+}
+.duck4 {
+  animation: duck-fly-4 10s ease-in 4s both;
+}
+
+.counter-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  text-align: center;
+}
+.counter-info::after {
+  content: counter(count);
+  padding: 2px 30px;
+  background-color: rgb(106, 213, 240);
+  border: 1px solid rgb(122, 122, 214);
+}/*# sourceMappingURL=style.css.map */
