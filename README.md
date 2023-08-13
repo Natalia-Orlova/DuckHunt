@@ -1,1 +1,1 @@
-(Открыть игру)[https://natalia-orlova.github.io/DuckHunt/]
+[Открыть игру](https://natalia-orlova.github.io/DuckHunt/)
