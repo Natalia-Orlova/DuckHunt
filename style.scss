@@ -6,16 +6,6 @@
 $duckWidth: 150px;
 $duckCount: 4;
 
-@keyframes rotate-out-top {
-    0% {
-        top: random(50)+vh;
-    }
-    100% {
-        left: 50vw;
-        top: 100vh;
-    }
-  }
-
   @for $i from 1 through $duckCount { //генерируем keyframes для каждой утки
     @keyframes duck-fly-#{$i} {
         0% {
@@ -32,9 +22,6 @@ $duckCount: 4;
       }
   }
 
-html {
-    cursor: url(img/aim2.svg), pointer; //изменила курсор на прицел
-}
 body {
     counter-reset: count;
     height: 100vh;
@@ -45,15 +32,14 @@ body {
     // background-position:bottom;
     position: relative;
     overflow: hidden;
-    
+    cursor: url(img/aim2.svg), pointer; //изменила курсор на прицел
 }
 
 .background {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    object-fit:fill;
-    
+    object-fit: cover;
 }
         
 

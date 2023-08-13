@@ -4,85 +4,73 @@
   box-sizing: border-box;
 }
 
-@keyframes rotate-out-top {
-  0% {
-    top: 9vh;
-  }
-  100% {
-    left: 50vw;
-    top: 100vh;
-  }
-}
 @keyframes duck-fly-1 {
   0% {
-    top: 12vh;
+    top: 40vh;
   }
   50% {
-    left: 6vw;
-    top: 23vh;
+    left: 42vw;
+    top: 60vh;
   }
   100% {
     left: 100vw;
-    top: 67vh;
+    top: 72vh;
   }
 }
 @keyframes duck-fly-2 {
   0% {
-    top: 67vh;
+    top: 54vh;
   }
   50% {
-    left: 59vw;
-    top: 11vh;
+    left: 13vw;
+    top: 37vh;
   }
   100% {
     left: 100vw;
-    top: 69vh;
+    top: 61vh;
   }
 }
 @keyframes duck-fly-3 {
   0% {
-    top: 74vh;
+    top: 47vh;
   }
   50% {
-    left: 20vw;
-    top: 59vh;
+    left: 32vw;
+    top: 60vh;
   }
   100% {
     left: 100vw;
-    top: 12vh;
+    top: 26vh;
   }
 }
 @keyframes duck-fly-4 {
   0% {
-    top: 82vh;
+    top: 10vh;
   }
   50% {
-    left: 16vw;
-    top: 22vh;
+    left: 14vw;
+    top: 49vh;
   }
   100% {
     left: 100vw;
-    top: 1vh;
+    top: 72vh;
   }
 }
-html {
-  cursor: url(img/aim2.svg), pointer;
-}
-
 body {
   counter-reset: count;
   height: 100vh;
   width: 100vw;
   position: relative;
   overflow: hidden;
+  cursor: url(img/aim2.svg), pointer;
 }
 
 .background {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .duck {
